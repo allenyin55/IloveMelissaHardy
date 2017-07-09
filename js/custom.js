@@ -8,7 +8,7 @@ function upTime(countTo) {
     difference = (now - countTo);
     days = Math.floor(difference / (60 * 60 * 1000 * 24) * 1);
     years = Math.floor(days / 365);
-    if (years > 1) {
+    if (years >= 1) {
         days = days - (years * 365)
     }
     hours = Math.floor((difference % (60 * 60 * 1000 * 24)) / (60 * 60 * 1000) * 1);
